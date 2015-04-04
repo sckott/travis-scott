@@ -17,7 +17,7 @@ def restart_travis(repo)
 end
 
 desc "Builds the ENV['TRAVIS_REPOSITORY'] travis job with token ENV['TRAVIS_TOKEN']"
-task :runtravis do
+task :stravis do
   Travis.access_token = ENV['TRAVIS_TOKEN']
 
   repos = ['TRAVIS_REPO_ENIGMA','TRAVIS_REPO_RSUNLIGHT','TRAVIS_REPO_COWSAY',

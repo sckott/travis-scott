@@ -55,7 +55,7 @@ _Note that those aren't quotes around `bundle exec travis token`, but backticks_
 * Test that the latest build is restarted by manually running
 
 ```shell
-heroku run rake build
+heroku run rake runtravis
 ```
 
 * Add the scheduler to your heroku app
