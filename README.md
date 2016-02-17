@@ -47,7 +47,7 @@ bundle exec travis token
 
 ```shell
 heroku config:add TRAVIS_REPO_=<github-user>/<github-repo>
-heroku config:add TRAVIS_TOKEN=`bundle exec travis token`
+heroku config:add TRAVIS_TOKEN=`travis token`
 ```
 
 _Note that those aren't quotes around `bundle exec travis token`, but backticks_
@@ -55,7 +55,7 @@ _Note that those aren't quotes around `bundle exec travis token`, but backticks_
 * Test that the latest build is restarted by manually running
 
 ```shell
-heroku run rake runtravis
+heroku run rake stravis
 ```
 
 * Add the scheduler to your heroku app
